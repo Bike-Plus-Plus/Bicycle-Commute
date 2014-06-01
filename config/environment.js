@@ -26,10 +26,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
-  }
-
-  if (environment === 'cordova') {
+    ENV.baseURL = '#/';
     ENV.locationType = 'hash';
   }
 
