@@ -24,3 +24,7 @@ html, body {
     list-style: none;
 }
 
+.rider-gravatar-message {
+    width: 1em;
+    height: 1em;
+}

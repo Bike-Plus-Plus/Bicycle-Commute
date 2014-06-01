@@ -13,12 +13,10 @@
             {{#each}}
                 <li class="well well-lg">
                     <div >
-                        <img class="img-circle rider-gravatar" src="assets/bikergirl1.jpg"/>
+                        <img class="img-circle rider-gravatar" {{bind-attr src=image}}/>
                         {{firstName}} {{lastName}} ({{distance}}) miles)
                     </div>
-                    <button class="btn btn-primary pull-right">
-                        Message
-                    </button>
+                    {{#linkTo "messagerider" this class="btn btn-default"}}Message{{/linkTo}}
                     <br>
                     Departure: {{formattedDeparture}}
                 </li>

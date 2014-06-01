@@ -2,8 +2,7 @@
 // e.g. `server/routes/ember-hamsters.js`
 //
 
-var FIXTURES = {
-    riders: [
+var FIXTURES = [
         {
             id: 0,
             firstName:"Jane",
@@ -17,19 +16,22 @@ var FIXTURES = {
         },
         {
             id: 1,
-            firstName:"Jane",
-            lastName: "Pallermo",
-            image:"assets/bikergirl1.jpg",
+            firstName:"Jessica",
+            lastName: "Smith",
+            image:"assets/shifty_desert_00.jpg",
             distance:4.5,
             departure:"Sat May 31 2014 20:20:14 GMT-0700 (PDT)",
             lat:34.0710,
             lon:-118.2530
         }
-    ]
-};
+    ];
 
 module.exports = function(app) {
    app.get('/server/riders', function(req, res) {
-     res.send(FIXTURES);
+       res.send({riders:FIXTURES});
+   });
+
+    app.get('/server/riders/:id', function(req, res){
+        res.send(FIXTURES[req.params.id]);
    });
 };

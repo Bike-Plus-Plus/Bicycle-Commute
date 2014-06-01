@@ -7,7 +7,7 @@ Router.map(function() {
     this.route("login", { path: "/login" });
     this.route("whereto", { path: "/whereto" });
     this.route("similarriders", { path: "/similarriders" });
-    this.route("messagerider", { path: "/messagerider" });
+    this.route("messagerider", { path: "/messagerider/:rider_id" });
     this.route("rideinprogress", { path: "/rideinprogress" });
     this.route("endride", { path: "/endride" });
 });
