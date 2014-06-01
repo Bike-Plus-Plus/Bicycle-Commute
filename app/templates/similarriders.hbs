@@ -2,8 +2,11 @@
 <h2>Riders</h2>
 
     <div id="near-by-rider-map"></div>
-    <div class="col-xs-4 pull-right near-by-rider-overlay" id="near-by-rider-list">
-        <p><span id="rider-toggle" class="pull-right">[Toggle List]</span><br/>
+
+    <div class="col-xs-4 pull-right near-by-rider-overlay well well-lg" id="near-by-rider-list">
+    {{#linkTo "rideinprogress" class="btn btn-primary pull-right"}}Start Ride{{/linkTo}}
+
+        <p><i id="rider-toggle" class="pull-right fa-align-justify"></i><br/>
         </p>
 
         <ul id="riders-list" class="">

@@ -1,11 +1,13 @@
 html, body {
   margin: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 
 
 .near-by-riders {
-    height: 100%;
+    height: 40em;
 }
 
 .rider-gravatar {
@@ -18,6 +20,7 @@ html, body {
     background-color: white;
 }
 
-.rider-list.collapsed, .new-user-only {
-    display: none;
+#riders-list {
+    list-style: none;
 }
+

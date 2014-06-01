@@ -1,5 +1,5 @@
-
-var Rider = DS.Model.extend({
+var Rider;
+Rider = DS.Model.extend({
     firstName: DS.attr('string'),
     lastName: DS.attr('string'),
     image: DS.attr('string'),
@@ -9,19 +9,19 @@ var Rider = DS.Model.extend({
     lat: DS.attr('number'),
     lon: DS.attr('number'),
 
-    formattedDeparture: function() {
+    formattedDeparture: function () {
         try {
             return moment(this.get('departure')).format("h:mm A");
-        } catch(e) {
+        } catch (e) {
             //do nothing
         }
         return "";
     }.property('departure'),
 
-    location: function() {
+    location: function () {
         try {
             return L.latLng(this.get('lat'), this.get('lon'));
-        } catch(e) {
+        } catch (e) {
             return null;
         }
     }.property("lat", "lon")

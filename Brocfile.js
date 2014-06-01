@@ -61,5 +61,8 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
   ]
 });
 
+//Font Awesome
+app.import('vendor/fontawesome/css/font-awesome.min.css');
+//Note: there's a but in ember-cli so the font files are manually copied to /public
 
 module.exports = app.toTree();
