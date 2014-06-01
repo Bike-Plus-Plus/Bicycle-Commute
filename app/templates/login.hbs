@@ -21,9 +21,10 @@
         </div>
         <a href="#" id="new-user-toggle">
           <span class="existing-user-only">Create new Account</span>
-          <span class="new-user-only">Login</span>
+          {{!--<span class="new-user-only">Login</span>--}}
+          {{#linkTo "whereto" class="btn btn-primary"}}Login{{/linkTo}}
         </a>
-        <input type="hidden" name="action" value="login">
+
     </form>
 </div>
 

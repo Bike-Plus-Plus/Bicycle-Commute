@@ -3,5 +3,6 @@
     <p id="feedback" class="alert">hi</p>
     <p class="directions">Focus on the road, have fun, and remember to click 'End' when you've arrived.</p>
     <p id="status">waiting...</p>
-    <div id="end" class="btn btn-danger">End</div>
+    {{!-- <div id="end" class="btn btn-danger">End</div>--}}
+    {{#linkTo "endride" class="btn btn-danger"}}End{{/linkTo}}
 </div>
