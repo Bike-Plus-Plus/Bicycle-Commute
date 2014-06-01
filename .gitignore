@@ -8,6 +8,7 @@
 /node_modules
 /vendor/*
 !/vendor/_loader.js
+!/vendor/ember-simple-auth/*
 
 # misc
 /.sass-cache

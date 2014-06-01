@@ -41,6 +41,11 @@ app.import('vendor/bootstrap/dist/js/bootstrap.min.js');
 app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/fastclick/lib/fastclick.js');
 
+
+// Simple Auth JS
+app.import('vendor/ember-simple-auth/ember-simple-auth-oauth2.js');
+app.import('vendor/ember-simple-auth/ember-simple-auth.js');
+
 //MomentJS
 app.import('vendor/momentjs/moment.js');
 
