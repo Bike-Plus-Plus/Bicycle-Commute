@@ -16,7 +16,7 @@ html, body {
 }
 
 .near-by-rider-overlay {
-    z-index: 1;
+    z-index: 1000;
     background-color: white;
 }
 
