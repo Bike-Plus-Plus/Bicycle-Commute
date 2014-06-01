@@ -10,7 +10,6 @@ var App = Ember.Application.extend({
 
 var prepareApp = function() {
   loadInitializers(App, 'bikeapp');
-  window.alert( 'app is ready!' );
 };
 
 if ( "cordova" in window ) {
