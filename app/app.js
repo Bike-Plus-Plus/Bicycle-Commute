@@ -8,6 +8,15 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-loadInitializers(App, 'bikeapp');
+var prepareApp = function() {
+  loadInitializers(App, 'bikeapp');
+  alert( 'app is ready!' );
+};
+
+if ( "cordova" in window ) {
+  document.addEventListener("deviceready", prepareApp, false);
+} else {
+  prepareApp();
+}
 
 export default App;
