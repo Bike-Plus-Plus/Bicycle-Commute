@@ -29,5 +29,9 @@ module.exports = function(environment) {
 
   }
 
+  if (environment === 'cordova') {
+    ENV.locationType = 'hash';
+  }
+
   return ENV;
 };

@@ -3,7 +3,6 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    this.route("rideinprogress", { path: "/" });
     this.route("login", { path: "/login" });
     this.route("whereto", { path: "/whereto" });
     this.route("similarriders", { path: "/similarriders" });
