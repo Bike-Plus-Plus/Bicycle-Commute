@@ -13,11 +13,11 @@ var app = new EmberApp({
   getEnvJSON: require('./config/environment')
 });
 
-//Bootstrap CSS
-app.import('vendor/bootstrap/bootstrap.min.css');
-app.import('vendor/bootstrap/bootstrap-theme.min.css');
+// //Bootstrap CSS
+app.import('vendor/bootstrap/dist/css/bootstrap.min.css');
+app.import('vendor/bootstrap/dist/css/bootstrap-theme.min.css');
 
-//Bootstrap JS
+// Bootstrap JS
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-core.min.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-alert.min.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-badge.min.js');
@@ -34,6 +34,9 @@ app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-notifications.min.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-popover.min.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-progressbar.min.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-wizard.min.js');
+
+// Bootstrap JS
+app.import('vendor/bootstrap/dist/js/bootstrap.min.js');
 
 app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/fastclick/lib/fastclick.js');
