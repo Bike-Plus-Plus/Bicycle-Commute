@@ -1,17 +1,29 @@
 <div class="well well-lg">
-    <h2>Login</h2>
+    <h2 class="existing-user-only">Login</h2>
+    <h2 class="new-user-only">Sign Up</h2>
     <form>
-        <div class="form-group">
-            Username:<input type="text"/>
+        <div class="form-group new-user-only">
+            Going our way? Sign up and find other commuters to meet up with.
         </div>
         <div class="form-group">
-            Password:<input type="password">
+            Username:<input type="text" name="username">
+        </div>
+        <div class="form-group">
+            Password:<input type="password" name="password">
+        </div>
+        <div class="form-group new-user-only">
+            Email:<input type="text" name="email">
         </div>
 
         <div class="form-group">
-            <input class="btn btn-primary" type="submit" value="Login">
+            <input class="btn btn-primary existing-user-only" type="submit" value="Login">
+            <input class="btn btn-primary new-user-only" type="submit" value="Sign Up">
         </div>
-        <a href="#">Create new Account</a>
+        <a href="#" id="new-user-toggle">
+          <span class="existing-user-only">Create new Account</span>
+          <span class="new-user-only">Login</span>
+        </a>
+        <input type="hidden" name="action" value="login">
     </form>
 </div>
 
