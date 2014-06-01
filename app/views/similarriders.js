@@ -1,4 +1,3 @@
-
 L.Icon.Default.imagePath = 'assets/images';
 window.MarkerCollectionLayer = EmberLeaflet.MarkerCollectionLayer.extend({
     contentBinding: 'controller'
