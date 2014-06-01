@@ -17,6 +17,7 @@
     "momentjs": "~2.6.0",
     "leaflet": "~0.7.3",
     "ember-leaflet": "~0.5.0",
-    "fastclick": "~1.0.2"
+    "fastclick": "~1.0.2",
+    "bootstrap": "~3.1.1"
   }
 }
