@@ -1,3 +1,5 @@
+/* global window, navigator */
+
 var RideinprogressView = Ember.View.extend({
 
   interval: 1000,
@@ -31,7 +33,7 @@ var RideinprogressView = Ember.View.extend({
     this.requestLocation( function() {
       var id;
 
-      id = setInterval( function() {
+      id = window.setInterval( function() {
         __this.reportLocation.apply( __this, arguments );
       }, __this.interval );
       __this.set( 'intervalID', id );
@@ -45,7 +47,7 @@ var RideinprogressView = Ember.View.extend({
   },
 
   stopTracking: function() {
-    clearInterval( this.get('intervalID') );
+    window.clearInterval( this.get('intervalID') );
 
     if ( this.get('backgroundModeAvailable') ) {
       window.plugin.backgroundMode.disable();
@@ -62,7 +64,7 @@ var RideinprogressView = Ember.View.extend({
 
   reportLocation: function() {
     this.requestLocation( function(location) {
-      var messageLines, message, key, value;
+      var messageLines, message, key;
 
       messageLines = [];
       for ( key in location.coords ) {
