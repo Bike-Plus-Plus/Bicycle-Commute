@@ -13,6 +13,10 @@ var app = new EmberApp({
   getEnvJSON: require('./config/environment')
 });
 
+//Bootstrap
+app.import('vendor/bootstrap/bootstrap.min.css');
+app.import('vendor/bootstrap/bootstrap-theme.min.css');
+
 // Use this to add additional libraries to the generated output files.
 app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-core.min.js');
@@ -36,9 +40,9 @@ app.import('vendor/ember-addons.bs_for_ember/dist/js/bs-wizard.min.js');
 app.import('vendor/momentjs/moment.js');
 
 //Leaflet + Ember-Leaflet
-app.import('vendor/leaflet-dist/leaflet-src.js')
-app.import('vendor/leaflet-dist/leaflet.css')
-app.import('vendor/ember-leaflet/dist/ember-leaflet.js')
+app.import('vendor/leaflet-dist/leaflet-src.js');
+app.import('vendor/leaflet-dist/leaflet.css');
+app.import('vendor/ember-leaflet/dist/ember-leaflet.js');
 
 
 // If the library that you are including contains AMD or ES6 modules that

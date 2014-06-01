@@ -39,9 +39,9 @@ var RideinprogressView = Ember.View.extend({
       __this.set( 'intervalID', id );
 
 
-    if ( this.get('backgroundModeAvailable') ) {
-      window.plugin.backgroundMode.enable();
-    }
+      if ( __this.get('backgroundModeAvailable') ) {
+        window.plugin.backgroundMode.enable();
+      }
 
     } );
   },
