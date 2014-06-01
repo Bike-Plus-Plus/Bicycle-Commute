@@ -26,9 +26,13 @@ Generate code stubs
     ember generate controller (name)
     ember generate route (name)
 
-Compile distribution version
+Compile web version
 
-    ember build dist
+    ember build
+
+Compile app version
+
+    ember build --environment production
 
 Setup Instructions
 1. Install your operating envionrment.
