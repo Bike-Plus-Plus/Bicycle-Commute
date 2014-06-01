@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/bikeapp.css">
 
-    <!-- Font Awesome -->
-    <link href="assets/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/font-awesome.css" rel="stylesheet">    
+    <link href="assets/fontawesome-webfont.eot" rel="stylesheet">
+    <link href="assets/fontawesome-webfont.svg" rel="stylesheet">
+    <link href="assets/fontawesome-webfont.ttf" rel="stylesheet">
+    <link href="assets/fontawesome-webfont.woff" rel="stylesheet">
     
     <!-- Plugin: animate.css (animated effects) - http://daneden.github.io/animate.css/ -->
     <link href="assets/animate.css" rel="stylesheet">
@@ -38,10 +41,6 @@
     <![endif]-->
     
     <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
-    <link rel="shortcut icon" href="img/icons/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
-    <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
@@ -105,7 +104,7 @@
                 
                 <!--user menu-->
                 <div class="btn-group user-menu">
-                  <a href="login.htm" class="btn btn-link login-mobile"><i class="fa fa-user"></i></a>
+                  <a href="login/" class="btn btn-link login-mobile"><i class="fa fa-user"></i></a>
                   <a href="#signup-modal" class="btn btn-link signup" data-toggle="modal">Sign Up</a>
                 </li>
                 <a href="#login-modal" class="btn btn-link login" data-toggle="modal">Login</a> 
@@ -170,16 +169,7 @@
                   </li>
                   <li role="presentation"><a role="menuitem" href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
                   <li class="active" role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
-                  <li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown" data-hover="dropdown">Tools for the Road +</a> 
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu" role="menu" aria-labelledby="blog-drop">
-                  <li role="presentation">
-                    <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item">Ride Safe</a>
-                  </li>
+                  <li role="presentation"><a role="menuitem" href="signup/" tabindex="-1" class="menu-item">Sign Up</a></li>
                 </ul>
               </li>
               
@@ -221,6 +211,8 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
     <script>
       window.ENV = {{ENV}};
     </script>
